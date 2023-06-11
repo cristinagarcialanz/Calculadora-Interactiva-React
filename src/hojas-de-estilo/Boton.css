@@ -6,7 +6,7 @@
   align-items: center;
   font-weight: bold;
   font-size: 38px;
-  background-color: #1b1b32;
+  background-color: rgb(16, 146, 140);
   color: white;
   border-radius: 25px;
   border: 2px solid white;
@@ -16,13 +16,13 @@
 }
 
 .boton-contenedor:hover {
-  background-color: lightgreen;
+  background-color: rgb(20, 202, 193);
 }
 
 .operador {
-  background-color: forestgreen;
+  background-color: rgb(14, 122, 84);
 }
 
 .operador:hover {
-  background-color: coral;
+  background-color: rgb(24, 175, 122);
 }

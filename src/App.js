@@ -15,6 +15,7 @@ function App() {
   const agregarInput = val => {
     setInput(input + val);
   };
+  
 // colocamos un condicional en caso de que el usuario ingrese primero el =
   const calcularResultado = () => {
     if (input) {
@@ -28,7 +29,9 @@ function App() {
         <h1>Calculadora Interactiva</h1>
       </div>
       <div className='contenedor-calculadora' >
+        
         <Pantalla input={input}/>
+        
         <div className='fila'>
           <Boton manejarClic={agregarInput}>1</Boton>
           <Boton manejarClic={agregarInput}>2</Boton>
@@ -53,11 +56,13 @@ function App() {
           <Boton manejarClic={agregarInput}>.</Boton>
           <Boton manejarClic={agregarInput}>/</Boton>
         </div>
+
         <div className='fila'>
           <BotonClear manejarClear={() => setInput('')}>
             Clear
           </BotonClear>          
         </div>
+
       </div>
     </div>
   );
